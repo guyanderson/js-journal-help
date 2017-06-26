@@ -7,9 +7,9 @@ $(document).ready(function(){
         var body = $('#body').val();
         alert(body);
         var newEntry = new Entry(title, body);
-//        var wordOut = newEntry.journalCount();
+        var wordOut = newEntry.journalCount();
         $('#journal-out').append('<p>Title: ' + title + '</p><p>'  + body + '</p>');
-        // $('#wordCount').append('<p>Word count: ' + wordOut + '</p>');
+        $('#wordCount').append('<p>Word count: ' + wordOut + '</p>');
 
     });
 });
